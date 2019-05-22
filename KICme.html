@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+        
+
+<head>
+    <link rel="icon" href="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/mail_forward.png">
+    <link rel="stylesheet" href="https://oneplace.pmiapps.biz/Style Library/MashUp/Css/OnePlaceMashup.css?v_2017_03_18_11" type="text/css"/>
+</head>    
+
+<title>KICme!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+.body{
+    background:lightcyan;
+}
+
+.optionselect select{
+   background: #000;
+   width:300px;
+   padding:5px;
+   color: cornflowerblue;
+   font-size:20px;
+   font-family:dumbledor;
+   line-height:1;
+   border:solid 2px steelblue;
+   border-radius:5px;
+   height:40px;
+   -webkit-appearance:none;
+    outline: none;
+}
+.optionselect h2{
+    color: darkblue;
+    font-size:30px;
+    font-family:dumbledor;
+}
+.optionselect h1{
+    color:#00008F;
+    font-size:40px;
+    font-family:dumbledor;
+    text-align: center;
+    padding:20px;
+}
+
+.optionselect button{
+    
+    background-color:darkblue;
+    text-decoration: cornsilk;
+    
+}
+
+.optionselect table {
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto; 
+    margin-right:auto;
+    text-align:left;
+  }
+
+  .optionselect button{
+  display: inline-block;
+  border-radius: 8px;
+  background-color: steelblue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  width:900px;
+
+
+
+}
+
+
+</style>
+<body>
+    <div class="optionselect" style="text-align:center"> 
+    <h1>Kofax Import Connector mail envelope</h1>
+    
+    <table>
+     <tr>
+        <th><h2>Company Code</h2></th>
+        <th><h2>Document Type</h2></th>
+        <th><h2>Priority</h2></th> 
+    </tr>
+     <tr>
+        <td>
+        <form id="formu">
+        
+        <select id="ccodes" autofocus>
+            <option value="1701" label="1701 - Abal Hermanos S.A.">
+            <option value="1702" label="1702 - Agroindustria L. J.">
+            <option value="1705" label="1705 - C.A. Tabacalera Nacional">
+            <option value="1706" label="1706 - Cervecería Bohemia, S.A.">
+            <option value="1707" label="1707 - Cervecería Nac.Dominicana">
+            <option value="1708" label="1708 - Cigarros la tabacalera M.">
+            <option value="1710" label="1710 - E. León Jimenes H.">
+            <option value="1711" label="1711 - Empresas León Jimenes">
+            <option value="1713" label="1713 - El Progreso S.A.">
+            <option value="1717" label="1717 - ITABSA">
+            <option value="1720" label="1720 - Massalin Particulares S.A" selected="selected">
+            <option value="1721" label="1721 - Mendiola y Compañía S.A.">
+            <option value="1723" label="1723 - PM Brasil Sao Paulo">
+            <option value="1724" label="1724 - Philip Morris Colombia">
+            <option value="1725" label="1725 - Philip Morris Mexico">
+            <option value="1727" label="1727 - Philip Morris Peru">
+            <option value="1729" label="1729 - Proesa S.A.">
+            <option value="1730" label="1730 - Proveedora Ecuatoriana SA">
+            <option value="1732" label="1732 - Servicios Corp. CIGATAM">
+            <option value="1733" label="1733 - Servicios Corp. PMM">
+            <option value="1734" label="1734 - Tabacalera Andina S.A.">
+            <option value="1735" label="1735 - TACASA Honduras">
+            <option value="1736" label="1736 - Tabacal. Centroamericana">
+            <option value="1737" label="1737 - Tabacalera Costarricense">
+            <option value="1738" label="1738 - Philip Morris El Salvador">
+            <option value="1740" label="1740 - Tadesa">
+            <option value="1742" label="1742 - Tabamark S.A.">
+            <option value="1744" label="1744 - Philip Morris Panamá">
+            <option value="1749" label="1749 - Philip Morris Nicaragua">
+            <option value="1758" label="1758 - Philip Morris Brazil Ind.">
+            <option value="1760" label="1760 - PM Dominicana, S.A.">
+            <option value="1761" label="1761 - Philip Morris Chile">
+            <option value="1763" label="1763 - La Aurora, C. por A.">
+            <option value="1764" label="1764 - COLTABACO">
+            <option value="1765" label="1765 - Tabacos Rubios de Colomb.">
+            <option value="1766" label="1766 - Comercializadora Cicolta">
+            <option value="1801" label="1801 - Rothmans Benson &amp; Hedges">
+            <option value="1850" label="1850 - Colombia">
+            <option value="1850" label="1850 – SISTEMAS ADMINISTRATIVOS INTEGRALES DE COLOMBIA">
+            <option value="2023" label="2023 - SUPERIOR TOB (ARUBA)">
+            <option value="2047" label="2047 - SUPERIOR TOB CURACAO">
+            <option value="2056" label="2056 - Philip Morris Latin America Services">
+                
+            </select>
+        
+        </td>
+        <td>
+        
+            <select id="doctypes">
+                <option disabled><strong>FI</strong></option>                
+                <option value="03" label="FIN.INVOICE DOWN PAYMENT">
+                <option value="04" label="FIN.INVOICE EZD">
+                <option value="05" label="FIN.INVOICE FREIGHTS">
+                <option value="06" label="FIN.INVOICE LEGAL">
+                <option value="31" label="FIN.INVOICE MANUAL ADJUST">
+                <option value="07" label="FIN.INVOICE MKT">
+                <option value="08" label="FIN.INVOICE OTHERS">
+                <option value="09" label="FIN.INVOICE P.SERVICES">
+                <option value="10" label="FIN.INVOICE SERVICES">
+                <option value="11" label="FIN.INVOICE SPECIAL">
+                <option value="12" label="FIN.INVOICE TAXES & WAGES">
+                <option value="26" label="FINANCIAL IC">
+                <option value="13" label="FINANCIAL INVOICE">
+                <option value="01" label="FIN.INVOICE C.DISPATCH">
+                <option value="02" label="FIN.INVOICE CUSTOMS">
+                <option disabled>LI</option>
+                <option value="21" label="LOGISTIC INVOICE/CREDIT">
+                <option value="14" label="LOG.INVOICE/CRED F.TRADE">
+                <option value="15" label="LOG.INVOICE/CRED FREIGHTS">
+                <option value="16" label="LOG.INVOICE/CRED LEGAL">
+                <option value="17" label="LOG.INVOICE/CRED MKT">
+                <option value="18" label="LOG.INVOICE/CRED MMPP">
+                <option value="19" label="LOG.INVOICE/CRED P.SERV.">
+                <option value="20" label="LOG.INVOICE/CRED SERVICES" selected="selected">
+                <option value="27" label="LOGISTIC IC">
+                <option value="29" label="INTERIOR I">
+                <option value="30" label="INTERIOR II">
+                <option  disabled>IC</option>
+                <option value="35" label="INTERCOMPANY SERVICE FEES">
+                <option disabled>TE</option>
+                <option value="28" label="PETTY CASH">
+                <option disabled>ND</option>
+                <option value="25" label="NOT DEFINED">
+            </select>
+            
+            </td>
+
+            <td>
+            <!--<input list="priorities" name="priority" id="prio">-->
+            <select id="priorities">
+                <option value="1" label="Low">
+                <option value="2" label="Medium" selected="selected">
+                <option value="3" label="High">
+                <option value="4" label="Very High">
+    
+            </select>
+        </td>
+ 
+
+    </tr>
+    <tr>
+        <td colspan="3">
+                <button type="button" onclick="mailto()" value="GO button!">KICme!</button>
+        </td>
+    
+    </tr>
+    </table>
+  
+
+    </form>
+    </div>
+
+<script>
+
+    function mailto(){
+
+    var ccode = document.getElementById('ccodes').value;
+    var priority=document.getElementById('priorities').value;
+    var docid = document.getElementById('doctypes').value;
+    var subject= ccode.substring(0,4)+' - '+docid+' - '+priority;
+
+    window.location.href='mailto:BA.ScanningCenter@pmi.com?subject='+subject+'&body=Adjunte el documento a este correo sin modificar el asunto.%0D%0ACada archivo adjunto crea un WorkItem en SAP. En caso de tener más de un archivo para la misma imagen, unifíquelos primero.%0D%0A%0D%0A --- %0D%0A%0D%0AAttach the document to this mail without changing the subject.%0D%0AEvery attachment creates a WorkItem on SAP. If you have more than one file for the same image, merge them first.';
+
+    }
+    
+</script>    
+    
+
+
+</body>
+</html>
